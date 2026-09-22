@@ -69,6 +69,10 @@ Le dataset SPIDER est distribué sous licence **CC BY 4.0** (Creative Commons At
 | F1-score | **0.949** |
 
 > L'agrégation au niveau patient améliore nettement la performance par rapport au niveau disque isolé, ce qui est cohérent cliniquement : le diagnostic final porte sur le patient, pas sur une seule coupe.
+### Visualisations
+![Matrices de confusion normalisées](results/confusion_matrix_normalized.png)
+![Courbe ROC](results/roc_curve_cls.png)
+![Matrice de confusion patient-level](results/confusion_matrix_patient_level.png)
 
 ## Stack technique
 `Python` · `PyTorch` / `torchvision` (ResNet18) · `SimpleITK` (imagerie médicale .mha) · `scikit-learn` (split, métriques) · `pandas` / `numpy` · `matplotlib` (courbes ROC, matrices de confusion) · Google Colab (GPU)
